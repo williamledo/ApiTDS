@@ -46,7 +46,7 @@ public class EncurtadorControllerTest {
 		Mockito.when(service.findAll()).thenReturn(List.of(encurtador));
 		this.mockMvc.perform(get("/encurtadores"))
 			.andExpect(status().isOk())
-			.andExpect(content().json("[{'urlEncurtada': 'localhost:8080/a231c', 'qtdDeAcessos': 0, 'urlOriginal': 'http://www.google.com'}]"));
+			.andExpect(content().json("[{\"urlEncurtada\":\"localhost:8080/a231c\",\"qtdDeAcesso\":0,\"urlOriginal\":\"http://www.google.com\"}]"));
 			
 	}
 	
