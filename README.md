@@ -4,11 +4,18 @@
 ## Endpoints
 
 •	Cadastrar URL  -  POST  localhost:8080/encurtadores </br>
-    Obs: Caso a URL já esteja cadastrada, você receberá como retorno a URL encurtada que já foi feita
+    Obs: Caso a URL já esteja cadastrada, você receberá como retorno a URL encurtada que já foi feita</br>
     
-```
+Request:
+``` 
  {
-     "url" : "https://github.com/williamledo/ApiTDS"
+     "url" : "https://github.com/williamledo"
+ }
+```
+Response:
+``` 
+ {
+     "urlEncurtada": "localhost:8080/3e86d"
  }
 ```
 
@@ -19,7 +26,7 @@
     {
         "urlEncurtada": "localhost:8080/3e86d",
         "qtdDeAcessos": 1,
-        "urlOriginal": "https://github.com/williamledo/ApiTDS"
+        "urlOriginal": "https://github.com/williamledo"
     }
 ]
 ```
